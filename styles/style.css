@@ -220,3 +220,65 @@ body{
 .contentBx .card .textBx .sci li a:hover{
     background: #2196f3;
 }
+
+@media screen and (max-width: 420px){
+    body{
+        overflow: hidden;
+    }
+
+    .container{
+        width: 280px;
+        height: 280px;
+    }
+
+    .container .icon .imgBx{
+        width: 37.33px;
+        height: 37.33px;
+        transform-origin: 158.67px;
+    }
+
+    .container .icon .imgBx.active{
+        box-shadow: 0 0 0 3px #222, 0 0 0 6px #ff1d50;
+    }
+
+    .content::before{
+        inset: 28px;
+        border: 2px solid transparent;
+        border-left: 2px solid #2196f3;
+        border-right: 2px solid #fff;
+    }
+
+    .content::after{
+        inset: 56px;
+        border: 2px solid transparent;
+        border-left: 2px solid #ff1d50;
+        border-right: 2px solid #fff;
+    }
+
+    .contentBx .card{
+        gap: 7px;
+    }
+
+    .contentBx .card .imgBx{
+        width: 70px;
+        height: 70px;
+    }
+
+    .contentBx .card .textBx h2{
+        font-size: 0.8em;
+    }
+
+    .contentBx .card .textBx h2 span{
+        font-size: 0.4em;
+    }
+
+    .contentBx .card .textBx .sci{
+        gap: 3.27px;
+        margin-top: 4.67px;
+    }
+
+    .contentBx .card .textBx .sci li a{
+        width: 14px;
+        height: 14px;
+    }
+}
